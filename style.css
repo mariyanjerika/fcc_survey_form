@@ -1,0 +1,558 @@
+body {
+  background-color: black;
+  width: 1000px;
+  color: white;
+  font-family: courier new, monospace;
+  margin: auto;
+}
+
+#MAIN-WRAP {
+  width: 800px;
+  background-color: transparent;
+  margin: auto;
+}
+
+#start {
+  display: block;
+  margin: 170px auto 140px auto;
+  padding: 10px;
+  border: ridge 6px gray;
+  background-color: gray;
+  font-family: courier new, monospace;   
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+#start:hover {
+  background-color: #AAA;
+}
+
+
+#wrap-title {
+  width: 60%;
+  margin: auto;
+  border: double 4px #333; 
+  margin-top: 0px;
+  padding: 12px;
+  height: 40px;
+}
+
+#wrap {
+  width: 50%;
+  margin: auto;
+  border: double 4px #333; 
+  margin-top: 80%;
+  padding: 12px;
+}
+
+#container { /* 8 bit survey form box */
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-columns: repeat(103, 1fr);
+  background-color: black;
+  width: 100%;
+  height: 40px;
+  margin: auto;
+
+}
+
+#container div { /* 8bit survey form colors*/
+  background-color: #bcaeae;
+  box-shadow: 3px 3px 0px #007000;
+}
+
+/* S */
+#AAA {
+  grid-area: 3/2/3/5;
+}
+#BBB {
+  grid-area: 4/1/4/3;
+}
+/* ???
+#BBB::after {
+    grid-area: 1/1/1/1;
+} */
+#CCC {
+  grid-area: 5/2/5/5;
+}
+#DDD {
+  grid-area: 4/5/4/5;
+}
+#EEE {
+  grid-area: 7/2/7/5;
+}
+#FFF {
+  grid-area: 6/4/6/6;
+}
+#GGG {
+  grid-area: 6/1/6/1;
+}
+
+/* U */
+#HHH {
+  grid-area: 3/10/7/12;
+}
+#III {
+  grid-area: 3/14/7/16;
+}
+#JJJ {
+  grid-area: 7/11/7/15;
+}
+
+/* R */
+#KKK {
+  grid-area: 3/21/8/23;
+}
+#LLL {
+  grid-area: 3/20/3/20;
+}
+#MMM {
+  grid-area: 4/23/4/23;
+}
+#NNN {
+  grid-area: 3/24/3/26;
+}
+#OOO {
+  grid-area: 4/25/4/25;
+}
+
+/* V */
+#PPP {
+  grid-area: 3/30/3/32;
+}
+#QQQ {
+  grid-area: 4/31/6/33;
+}
+#RRR {
+  grid-area: 6/32/8/34;
+}
+#SSS {
+  grid-area: 4/34/6/35;
+}
+#TTT {
+  grid-area: 3/35/3/35;
+}
+
+/* E */
+#UUU {
+  grid-area: 4/40/7/40;
+}
+#VVV {
+  grid-area: 3/41/8/41;
+}
+#WWW {
+  grid-area: 3/41/3/45;
+}
+#XXX {
+  grid-area: 4/44/6/46;
+}
+#YYY {
+  grid-area: 5/41/5/45;
+}
+#ZZZ {
+  grid-area: 7/41/7/46;
+}
+
+/* Y */
+#AA {
+  grid-area: 3/50/3/52;
+}
+#BB {
+  grid-area: 4/51/4/53;
+}
+#CC {
+  grid-area: 5/52/5/52;
+}
+#DD {
+  grid-area: 6/53/8/55;
+} 
+#EE {
+  grid-area: 3/54/6/54;
+} 
+#FF {
+  grid-area: 3/53/3/57;
+}
+#GG {
+  grid-area: 4/54/4/56;
+}
+
+/* F */
+#HH {
+  grid-area: 2/68/8/70;
+} 
+#II {
+  grid-area: 4/67/4/72; 
+}
+#JJ {
+  grid-area: 1/69/1/72; 
+}
+#KK {
+  grid-area: 2/71/2/73;
+} 
+
+/* O */
+#LL {
+  grid-area: 4/77/7/77;
+}
+#MM {
+  grid-area: 3/78/8/78;
+}
+#NN {
+  grid-area: 3/78/3/82;
+} 
+#OO {
+  grid-area: 7/78/7/82;
+}
+#PP {
+  grid-area: 4/81/7/83;
+}
+
+/* R */
+
+#QQ {
+  grid-area: 3/88/8/90;
+}
+#RR {
+  grid-area: 3/87/3/87;
+}
+#SS {
+  grid-area: 4/90/4/90;
+}
+#TT {
+  grid-area: 3/91/3/93;
+}
+#UU {
+  grid-area: 4/92/4/92;
+}
+
+/* M */
+#VV {
+  grid-area: 3/97/3/97;
+}
+#WW {
+  grid-area: 3/98/8/100;
+}
+#XX {
+  grid-area: 4/100/4/104;
+}
+#YY {
+  grid-area: 3/101/8/101;
+}
+#ZZ {
+  grid-area: 3/103/8/103;
+}
+
+
+/* M U S H R O O M */
+#mushroom {
+  width: 25px;
+  height: 25px;
+  display: grid;
+  grid-template-columns: repeat(25, 1px);
+  grid-template-rows: repeat(25, 1px);
+  background-color: transparent;
+  position: relative;
+  z-index: 2;
+  top: -500px;
+  left: 20px;
+  animation: mushy 22s linear 10;
+
+}
+
+@keyframes mushy {
+  0% {
+    left: 20px;
+    top: -500px;
+  }
+  9% {
+    left: 20px;
+    top: -70px;
+
+  }
+  25% {
+    left: 498px;
+    top: -70px;
+  }
+  72% {
+    left: 497px;
+    top: 2365px;
+  }
+  94% {
+    opacity: 100%;
+    left: -19%;
+    top: 2365px;
+  } 
+  100% {
+    opacity: 40%;
+    left: -40%;
+    top: 2365px;
+  }
+  
+ 
+  /* 0% {
+    top: -20px;
+  }
+  9% {
+    top: 470px;
+    left: 350px;
+  }
+  25% {
+    left: 840px;
+    top: 470px;
+  }
+  72% {
+    left: 840px;
+    top: 3217px;
+  }
+  95% {
+    opacity: 100%;
+    left: 110px;
+    top: 3217px;
+  } 
+  100% {
+    opacity: 40%;
+    left: 53px;
+    top: 3217px;
+  } */
+}
+
+#mushroom div{
+  background-color: black;
+}
+
+/*outline*/
+#aa {
+  grid-area: 6/1/13/1;
+}
+#bb {
+  grid-area: 6/16/13/16;
+}
+#cc {
+  grid-area: 1/6/1/12;
+}
+#dd {
+  grid-area: 2/4/2/7;
+}
+#ee {
+  grid-area: 3/3/3/5;
+}
+#ff {
+  grid-area: 4/2/4/4;
+}
+#gg {
+  grid-area: 4/2/7/2;
+}
+#hh {
+  grid-area: 12/2/14/2;
+}
+#ii {
+  grid-area: 12/3/16/3;
+}
+#jj {
+  grid-area: 15/4/17/4;
+}
+#kk {
+  grid-area: 11/4/11/14;
+}
+#ll {
+  grid-area: 16/4/16/14;
+}
+#mm {
+  grid-area: 12/4/12/4;
+}
+#nn {
+  grid-area: 12/13/12/13;
+}
+#oo { /*left eye*/
+  grid-area: 11/7/14/7;
+}
+#pp { /*right eye*/
+  grid-area: 11/10/14/10;
+}
+#qq {
+  grid-area: 6/1/13/1;
+}
+#rr {
+  grid-area: 12/14/14/16; 
+}
+#ss {
+  grid-area: 14/14/16/14;
+}
+#tt {
+  grid-area: 15/13/15/13;
+}
+#uu {
+  grid-area: 4/15/7/15;
+}
+#vv {
+  grid-area: 3/14/5/14;
+}
+#ww {
+  grid-area: 2/13/4/13;
+}
+#xx {
+  grid-area: 1/11/3/11;
+}
+#yy {
+  grid-area: 2/11/2/13;
+}
+
+/* mushroom red */
+#mushroom .red {
+  background-color: red;
+}
+#aaa {
+  grid-area: 2/8/5/10;
+}
+#bbb {
+  grid-area: 4/7/6/11;
+}
+#ccc {
+  grid-area: 4/4/6/4;
+}
+#ddd {
+  grid-area: 4/13/6/13;
+}
+#eee {
+  grid-area: 5/5/7/7;
+}
+#fff {
+  grid-area: 5/11/7/13;
+}
+#ggg {
+  grid-area: 10/2/12/4;
+}
+#hhh {
+  grid-area: 10/14/12/16;
+}
+#iii {
+  grid-area: 9/4/11/6;
+}
+#jjj {
+  grid-area: 9/12/11/14;
+}
+#kkk {
+  grid-area: 7/5/9/5;
+}
+#lll {
+  grid-area: 7/12/9/12;
+}
+#mmm {
+  grid-area: 10/6/10/6;
+}
+#nnn {
+  grid-area: 10/11/10/11;
+}
+
+/* white */
+#mushroom .white {
+  background-color: white;
+}
+#Aa {
+  grid-area: 2/7/4/7;
+}
+#Ba {
+  grid-area: 3/5/5/7;
+}
+#Ca {
+  grid-area: 3/11/5/13;
+}
+#Da {
+  grid-area: 2/10/4/10;
+}
+#Ea {
+  grid-area: 5/3/5/3;
+}
+#Fa {
+  grid-area: 6/3/10/5;
+}
+#Ga {
+  grid-area: 7/2/10/4;
+}
+#Ha {
+  grid-area: 7/14/10/16;
+}
+#Ia {
+  grid-area: 6/13/10/15;
+}
+#Ja {
+  grid-area: 5/14/5/14;
+}
+#Ka {
+  grid-area: 6/7/11/11;
+}
+#La {
+  grid-area: 7/6/10/12;
+}
+/* white face */
+#Ma {
+  grid-area: 12/5/16/7;
+}
+#Na {
+  grid-area: 12/8/16/10;
+}
+#Oa {
+  grid-area: 12/11/16/13;
+}
+#Pa {
+  grid-area: 13/4/15/4;
+}
+#Qa {
+  grid-area: 13/13/15/13;
+}
+#Ra {
+  grid-area: 14/7/16/11;
+}
+
+/* E X I T */
+#exit {
+  position: relative;
+  top: 2440px;
+  left: -5%;
+  background-image: linear-gradient(#9af4e8, white, #76af4a );
+  width: 50px;
+  height: 70px;
+  border-radius: 45% 45% 0 0;
+  border: double 3px gray;
+  box-shadow: 0px 0px 20px white;
+  z-index: 1;
+}
+
+/* START ACTUAL SURVEY */
+h1 {
+  position: absolute;
+  left: -10000px
+}
+
+#survey-form {
+  display: block;
+  width: 90%;
+  padding: 20px 0px;
+  margin: auto;
+  text-align: center;
+}
+
+#survey-form p {
+  margin-top: 40px;
+
+}
+
+#submit {
+  display: block;
+  margin: 60px auto;
+  border: ridge 6px gray;
+  background-color: gray;
+  font-family: courier new, monospace;
+  padding: 8px 10px;
+}
+
+#submit:hover {
+  background-color: #999;
+}
+hr {
+  width: 40%;
+  opacity: 0%;
+}
